@@ -6,35 +6,14 @@ export enum StringType {
     Binary = 2,
     Hex = 16,
 }
-//
 export type PermissionFormat = {
     [ key : string ]: number ;
 }
-//
-export enum FilePermission {
-    Read = 0x1,
-    Write = 0x2,
-    Execute = 0x4,
-    All = 0x7,
-}
-//
-export enum Article{
-    Read = 0x10,
-    Write = 0x20,
-    Execute = 0x40,
-    Manager = 0x80,
-}
-//
-export enum AuthenticatedRole {
-    Root = 1099511627775,
-    Administrator = 1099511627775,
-    Banned = 0 ,
-    User = 1,
-    BlogWritter = 32,
-    ArticleManager = ParseCode(ParsePermission(Article)),
+export enum BaseAuthenticate {
+    Root = 1099511627775
 }
 export enum PermissionLimiter {
-    Maximum = AuthenticatedRole.Root
+    Maximum = BaseAuthenticate.Root
 }
 export function ParsePermission(EnumObject : any) : PermissionFormat  {
     const EnumInArray =  Object.values(EnumObject) as number[]

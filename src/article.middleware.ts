@@ -3,7 +3,7 @@ import * as express from "express";
 import * as jwt from "jsonwebtoken";
 import { AuthRequest } from "./auth.middleware";
 import { TokenSecret } from "./config";
-import { Article, PermissionFormat, Validate, ParsePermission, parseListPermissions, ParseCode } from './note-gate';
+import { Validate } from './note-gate';
 import { WriteArticleRequiredRoles } from "./permission.declare";
 
 
