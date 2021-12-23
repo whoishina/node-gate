@@ -1,5 +1,5 @@
 {
-  "name": "nde-native",
+  "name": "@whoishina/node-gate",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
