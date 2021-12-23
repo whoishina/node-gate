@@ -1,5 +1,5 @@
 {
-  "name": "@whoishina/node-gate",
+  "name": "node-gate",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
