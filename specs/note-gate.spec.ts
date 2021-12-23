@@ -1,13 +1,12 @@
 import {
-    AuthenticatedRole,
     ParsePermission,
     ParseCode,
     parseListPermissions,
     PermissionFormat,
-    Article,
     Validate,
-    FilePermission
-} from '../src/note-gate';
+} from '../src/';
+
+import { Article,AuthenticatedRole } from '../src/permission.declare';
 
 
 
@@ -41,25 +40,6 @@ describe("Parse client user's role permissions", () => {
     test("To Code", done => {
         const Code = ParseCode(RequiedPermissionForWriteBlog)
         done()
-    })
-    test("To Permission", done => {
-        const User: any = {}
-        User.can = function (Action: any): boolean {
-            return Validate(Action, this.role)
-        }
-        User.role = AuthenticatedRole.ArticleManager
-        const ManagementArticles: PermissionFormat = {
-            'file.write': FilePermission.Write
-        }
-        console.log('User role code :', User.role, '=> Manager file.write require minimum', FilePermission.Write)
-        if (User.can(ManagementArticles))
-            console.log('User can create or write file')
-        else
-            console.log('User can not create or write file')
-
-
-        done()
-
     })
 })
 const ClientPermissions = {

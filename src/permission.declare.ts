@@ -1,4 +1,4 @@
-import { ParseCode, ParsePermission, PermissionFormat } from "./note-gate";
+import { ParseCode, ParsePermission, PermissionFormat } from "./";
 //
 export enum Article{
     Read = 0x10,
