@@ -1,5 +1,5 @@
 {
-  "name": "node-gate",
+  "name": "@whoishina/node-gate",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
@@ -27,5 +27,13 @@
     "nodemon": "^2.0.15",
     "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoishina/node-gate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whoishina/node-gate/issues"
+  },
+  "homepage": "https://github.com/whoishina/node-gate#readme"
 }
