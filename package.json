@@ -6,7 +6,8 @@
   "types": "build/index.d.js",
   "scripts": {
     "test": "jest",
-    "mon": "nodemon src/index.ts"
+    "mon": "nodemon src/index.ts",
+    "build:types": "tsc -d --declarationDir build --declarationMap --emitDeclarationOnly"
   },
   "keywords": [],
   "author": "",
